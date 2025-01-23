@@ -1,7 +1,7 @@
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
 import { NextResponse } from "next/server";
 
-const propertyId = '329824737';
+const propertyId = process.env.PROPERTY_ID;
 
 // Initialize the Google Analytics Data API client
 const analyticsDataClient = new BetaAnalyticsDataClient({
@@ -31,7 +31,7 @@ export async function POST(request) {
                 { name: "totalRevenue" },  // Get the total revenue metric
             ],
             dateRanges: [
-                { startDate: "2025-01-01", endDate: "today" },  // Get data from the earliest possible date until now
+                { startDate: "2000-01-01", endDate: "today" },  // Get data from the earliest possible date until now
             ],
             dimensionFilter: {
                 filter: {

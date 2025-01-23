@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Error({ error, reset }) {
     return (
-        <section className="bg-gray-900 h-[90vh] w-screen flex items-center justify-center">
+        <section className="bg-violet-900 h-[90vh] w-screen flex items-center justify-center">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-sm text-center">
                     <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-blue-500">Whoops!</h1>

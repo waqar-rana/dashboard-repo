@@ -1,7 +1,7 @@
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
 import { NextResponse } from "next/server";
 
-const propertyId = '329824737';
+const propertyId = process.env.PROPERTY_ID;
 
 // Initialize the client
 const analyticsDataClient = new BetaAnalyticsDataClient({
@@ -25,9 +25,9 @@ export async function POST(request) {
             return NextResponse.json({ error: "Start date should be less than end date" }, {status: 400});
         }
 
-        if (new Date(startDate) < new Date("2025-01-01")) {
-            return NextResponse.json({ error: "We are not offering data before 01-01-2025. Please select date after this range" }, {status: 400});
-        }
+        // if (new Date(startDate) < new Date("2025-01-01")) {
+        //     return NextResponse.json({ error: "We are not offering data before 01-01-2025. Please select date after this range" }, {status: 400});
+        // }
 
         const [response] = await analyticsDataClient.runReport({
             property: `properties/${propertyId}`,

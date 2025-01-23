@@ -3,7 +3,7 @@ import Category from "@/models/Category";
 import { NextResponse } from "next/server";
 
 const getCategories = async () => {
-    const response = await fetch('https://fashiontipstricks.com/wp-json/wp/v2/categories?per_page=100&_fields=id,name');
+    const response = await fetch(`${process.env.DOMAIN_1}/wp-json/wp/v2/categories?per_page=100&_fields=id,name`);
     const data = await response.json();
     return data;
 }
@@ -14,7 +14,7 @@ const getPosts = async (categoryId) => {
     let totalPages = 1;
 
     do {
-        const response = await fetch(`https://fashiontipstricks.com/wp-json/wp/v2/posts?categories=${categoryId}&per_page=100&page=${page}&_fields=title,link`);
+        const response = await fetch(`${process.env.DOMAIN_1}/wp-json/wp/v2/posts?categories=${categoryId}&per_page=100&page=${page}&_fields=title,link`);
         const data = await response.json();
 
         // Map the fetched posts from the current page

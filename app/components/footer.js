@@ -25,7 +25,7 @@ const Footer = () => {
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <Link
-            href={"mailto:socialseo090@gmail.com"}
+            href={"mailto:ranasahbg7777@gmail.com"}
             className="text-gray-400 flex items-center gap-2"
           >
             <svg
@@ -56,7 +56,7 @@ const Footer = () => {
                 </g>
               </g>
             </svg>
-            socialseo090@gmail.com
+            ranasahbg7777@gmail.com
           </Link>
         </span>
       </div>

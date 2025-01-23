@@ -137,7 +137,7 @@ export default function Home() {
                 4. Every click from your fans on the story means compensation and rewards for you, whether it is on Facebook, Instagram, Twitter, or any other platform! Your fans engagement pays off across all channels
               </p>
               <a
-                href="mailto:socialseo090@gmail.com"
+                href="mailto:ranasahbg7777@gmail.com"
                 className="font-bold text-blue-600 mt-8"
                 target="blank"
               >
