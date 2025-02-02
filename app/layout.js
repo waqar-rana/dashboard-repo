@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" sizes="32x32" href="/favicon.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-violet-900 pb-14 md:pb-0`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 pb-14 md:pb-0`}
       >
         <LoadingBar />
         <ToastWrapper />

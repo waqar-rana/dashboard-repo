@@ -24,9 +24,9 @@ export default function Home() {
         }}>
         <div className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1556565681-306458ef93cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
           }}>
-          <span className="w-full h-full absolute opacity-70 bg-black"></span>
+          <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
         </div>
         <div className="container relative mx-auto">
           <div className="items-center flex flex-wrap">
@@ -57,17 +57,17 @@ export default function Home() {
             y="0"
           >
             <polygon
-              className="text-violet-900 fill-current"
+              className="text-gray-900 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
         </div>
       </div>
-      <section className="pb-20 bg-violet-900 -mt-24">
+      <section className="pb-20 bg-gray-900 -mt-24">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
             <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-violet-800 w-full mb-8 shadow-lg rounded-lg">
+              <div className="relative flex flex-col min-w-0 break-words bg-gray-800 w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
                   {/* <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"> */}
                   <Image className="p-3 inline-flex items-center justify-center mb-5" src={comingSoon} width={180} alt="Daily Jugarr Logo" />
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
 
             <div className="w-full md:w-4/12 px-4 text-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-violet-800 w-full mb-8 shadow-lg rounded-lg">
+              <div className="relative flex flex-col min-w-0 break-words bg-gray-800 w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
                   {/* <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"> */}
                   <Link href={"https://fashiontipstricks.com"} target="blank">
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
 
             <div className="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-violet-800 w-full mb-8 shadow-lg rounded-lg">
+              <div className="relative flex flex-col min-w-0 break-words bg-gray-800 w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
                   {/* <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"> */}
                   <Image className="p-3 inline-flex items-center justify-center mb-5" src={comingSoon} width={180} alt="Wives Hub Logo" />
@@ -118,7 +118,7 @@ export default function Home() {
 
           <div className="flex flex-wrap items-center mt-32">
             <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div className="text-gray-300 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-violet-100">
+              <div className="text-gray-300 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M451-193h55v-52q61-7 95-37.5t34-81.5q0-51-29-83t-98-61q-58-24-84-43t-26-51q0-31 22.5-49t61.5-18q30 0 52 14t37 42l48-23q-17-35-45-55t-66-24v-51h-55v51q-51 7-80.5 37.5T343-602q0 49 30 78t90 54q67 28 92 50.5t25 55.5q0 32-26.5 51.5T487-293q-39 0-69.5-22T375-375l-51 17q21 46 51.5 72.5T451-247v54Zm29 113q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" /></svg>
               </div>
               <h3 className="text-white text-3xl mb-2 font-semibold leading-normal">
@@ -196,7 +196,7 @@ export default function Home() {
             y="0"
           >
             <polygon
-              className="text-violet-900 fill-current"
+              className="text-gray-900 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
@@ -383,7 +383,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className="pb-20 relative block bg-violet-900">
+      <section className="pb-20 relative block bg-gray-900">
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style={{ height: "80px" }}
@@ -398,7 +398,7 @@ export default function Home() {
             y="0"
           >
             <polygon
-              className="text-violet-900 fill-current"
+              className="text-gray-900 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
@@ -417,7 +417,7 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap mt-12 justify-center">
             <div className="w-full lg:w-3/12 px-4 text-center">
-              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-violet-800 inline-flex items-center justify-center">
+              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-800 inline-flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M431-330q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593-647q0-45-30-75t-84-30q-52 0-80 29.5T358-661l-84-37q22-59 74.5-100.5T479-840q100 0 154 55.5T687-651q0 48-20.5 87T601-482q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409-150q0-29 20.5-49.5T479-220q29 0 49.5 20.5T549-150q0 29-20.5 49.5T479-80Z" /></svg>
               </div>
               <h6 className="text-xl mt-5 font-semibold text-white">
@@ -428,7 +428,7 @@ export default function Home() {
               </p>
             </div>
             <div className="w-full lg:w-3/12 px-4 text-center">
-              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-violet-800 inline-flex items-center justify-center">
+              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-800 inline-flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M431-330q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593-647q0-45-30-75t-84-30q-52 0-80 29.5T358-661l-84-37q22-59 74.5-100.5T479-840q100 0 154 55.5T687-651q0 48-20.5 87T601-482q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409-150q0-29 20.5-49.5T479-220q29 0 49.5 20.5T549-150q0 29-20.5 49.5T479-80Z" /></svg>
               </div>
               <h5 className="text-xl mt-5 font-semibold text-white">
@@ -439,7 +439,7 @@ export default function Home() {
               </p>
             </div>
             <div className="w-full lg:w-3/12 px-4 text-center">
-              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-violet-800 inline-flex items-center justify-center">
+              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-800 inline-flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M431-330q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593-647q0-45-30-75t-84-30q-52 0-80 29.5T358-661l-84-37q22-59 74.5-100.5T479-840q100 0 154 55.5T687-651q0 48-20.5 87T601-482q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409-150q0-29 20.5-49.5T479-220q29 0 49.5 20.5T549-150q0 29-20.5 49.5T479-80Z" /></svg>
               </div>
               <h5 className="text-xl mt-5 font-semibold text-white">
@@ -450,7 +450,7 @@ export default function Home() {
               </p>
             </div>
             <div className="w-full lg:w-3/12 px-4 text-center">
-              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-violet-800 inline-flex items-center justify-center">
+              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-gray-800 inline-flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M431-330q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593-647q0-45-30-75t-84-30q-52 0-80 29.5T358-661l-84-37q22-59 74.5-100.5T479-840q100 0 154 55.5T687-651q0 48-20.5 87T601-482q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409-150q0-29 20.5-49.5T479-220q29 0 49.5 20.5T549-150q0 29-20.5 49.5T479-80Z" /></svg>
               </div>
               <h5 className="text-xl mt-5 font-semibold text-white">

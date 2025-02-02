@@ -31,7 +31,7 @@ export async function POST(request) {
                 { name: "totalRevenue" },  // Get the total revenue metric
             ],
             dateRanges: [
-                { startDate: "2000-01-01", endDate: "today" },  // Get data from the earliest possible date until now
+                { startDate: "2015-08-14", endDate: "today" },  // Get data from the earliest possible date until now
             ],
             dimensionFilter: {
                 filter: {

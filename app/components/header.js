@@ -50,7 +50,7 @@ const Header = () => {
     }
   };
   return (
-    <header className="text-white bg-violet-900 bg-opacity-60 body-font relative z-50">
+    <header className="text-gray-400 bg-[#11182770] body-font relative z-50">
       <div className="container mx-auto flex flex-wrap p-5 md:flex-row items-center justify-between">
         <Link
           href={"/"}
@@ -68,12 +68,12 @@ const Header = () => {
             href={"/login"}
             className="md:ml-auto flex flex-wrap items-center justify-center"
           >
-            <button className="inline-flex items-center bg-violet-800 border border-violet-500 py-1 px-3 focus:outline-none hover:bg-violet-700 focus:ring-violet-500 focus:ring-2 rounded text-xs sm:text-base md:mt-0">
+            <button className="inline-flex items-center bg-gray-800 border border-gray-500 py-1 px-3 focus:outline-none hover:bg-gray-700 focus:ring-gray-500 focus:ring-2 rounded text-xs sm:text-base md:mt-0">
               Go to Dashboard
               <lord-icon
                 src="https://cdn.lordicon.com/vduvxizq.json"
                 trigger="hover"
-                colors="primary:#ffffff"
+                colors="primary:#9ca3af"
                 style={{ width: "25px", height: "25px" }}
               ></lord-icon>
             </button>
@@ -134,12 +134,12 @@ const Header = () => {
               } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full`}
             >
               <div className="h-screen flex items-center justify-center relative p-4 w-full max-w-md md:h-auto">
-                <div className="relative p-4 text-center rounded-lg shadow bg-violet-800 sm:p-5">
+                <div className="relative p-4 text-center rounded-lg shadow bg-gray-800 sm:p-5">
                   <button
                     onClick={() => {
                       setHideSignout(true);
                     }}
-                    className="text-white absolute top-2.5 right-2.5 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-violet-600 hover:text-white"
+                    className="text-gray-400 absolute top-2.5 right-2.5 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white"
                   >
                     <svg
                       className="w-5 h-5"
@@ -156,7 +156,7 @@ const Header = () => {
                     <span className="sr-only">Close modal</span>
                   </button>
                   <svg
-                    className="text-white w-11 h-11 mb-3.5 mx-auto"
+                    className="text-gray-500 w-11 h-11 mb-3.5 mx-auto"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -177,7 +177,7 @@ const Header = () => {
                       onClick={() => {
                         setHideSignout(true);
                       }}
-                      className="py-2 px-3 text-sm font-medium rounded-lg border focus:ring-4 focus:outline-none focus:ring-primary-300 focus:z-10 bg-violet-700 text-gray-300 border-violet-500 hover:text-white hover:bg-violet-600 focus:ring-violet-600"
+                      className="py-2 px-3 text-sm font-medium rounded-lg border focus:ring-4 focus:outline-none focus:ring-primary-300 focus:z-10 bg-gray-700 text-gray-300 border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600"
                     >
                       No, cancel
                     </button>

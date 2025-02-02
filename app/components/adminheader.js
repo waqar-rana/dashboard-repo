@@ -76,7 +76,7 @@ const AdminHeader = () => {
   return (
     <>
       <header>
-        <nav className="border-gray-200 bg-violet-900">
+        <nav className="border-gray-200 bg-gray-900">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <div className="flex items-center gap-2">
               <Link href="/">
@@ -121,12 +121,12 @@ const AdminHeader = () => {
         } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full`}
       >
         <div className="h-screen flex items-center justify-center relative p-4 w-full max-w-md md:h-auto">
-          <div className="relative p-4 text-center rounded-lg shadow bg-violet-800 sm:p-5">
+          <div className="relative p-4 text-center rounded-lg shadow bg-gray-800 sm:p-5">
             <button
               onClick={() => {
                 setHideSignout(true);
               }}
-              className="text-gray-400 absolute top-2.5 right-2.5 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-violet-600 hover:text-white"
+              className="text-gray-400 absolute top-2.5 right-2.5 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white"
             >
               <svg
                 className="w-5 h-5"
@@ -143,7 +143,7 @@ const AdminHeader = () => {
               <span className="sr-only">Close modal</span>
             </button>
             <svg
-              className="text-white w-11 h-11 mb-3.5 mx-auto"
+              className="text-gray-500 w-11 h-11 mb-3.5 mx-auto"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -164,7 +164,7 @@ const AdminHeader = () => {
                 onClick={() => {
                   setHideSignout(true);
                 }}
-                className="py-2 px-3 text-sm font-medium rounded-lg border focus:ring-4 focus:outline-none focus:ring-primary-300 focus:z-10 bg-violet-700 text-gray-300 border-gray-500 hover:text-white hover:bg-violet-600 focus:ring-gray-600"
+                className="py-2 px-3 text-sm font-medium rounded-lg border focus:ring-4 focus:outline-none focus:ring-primary-300 focus:z-10 bg-gray-700 text-gray-300 border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600"
               >
                 No, cancel
               </button>
@@ -188,7 +188,7 @@ const AdminHeader = () => {
         } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-screen max-h-full`}
       >
         <div className="relative p-4 w-full max-w-md max-h-full">
-          <div className="relative rounded-lg shadow bg-violet-700">
+          <div className="relative rounded-lg shadow bg-gray-700">
             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-600">
               <h3 className="text-xl font-semibold text-white">
                 Reset Password
@@ -198,7 +198,7 @@ const AdminHeader = () => {
                   setHideReset(true);
                 }}
                 type="button"
-                className="end-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:bg-violet-600 hover:text-white"
+                className="end-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white"
               >
                 <svg
                   className="w-3 h-3"
@@ -232,7 +232,7 @@ const AdminHeader = () => {
                     }}
                     {...register("oldUsername", { required: true })}
                     placeholder="Enter new Username"
-                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-violet-600 border-gray-500 placeholder-gray-400 text-white"
+                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                   />
                 </div>
                 <div className="relative">
@@ -248,7 +248,7 @@ const AdminHeader = () => {
                       clearErrors("formErrors");
                     }}
                     {...register("oldPassword", { required: true })}
-                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-violet-600 border-gray-500 placeholder-gray-400 text-white"
+                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                     placeholder="Enter Old Password"
                   />
                   <span
@@ -292,7 +292,7 @@ const AdminHeader = () => {
                     }}
                     {...register("newUsername", { required: true })}
                     placeholder="Enter new Username"
-                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-violet-600 border-gray-500 placeholder-gray-400 text-white"
+                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                   />
                 </div>
                 <div className="relative">
@@ -309,7 +309,7 @@ const AdminHeader = () => {
                     }}
                     {...register("newPassword", { required: true })}
                     placeholder="Enter New Password"
-                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-violet-600 border-gray-500 placeholder-gray-400 text-white"
+                    className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                   />
                   <span
                     onClick={(e) => {
@@ -352,7 +352,7 @@ const AdminHeader = () => {
                   <button
                     disabled
                     type="button"
-                    className="w-full font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-violet-800 text-gray-400 border-gray-600 hover:text-white hover:bg-violet-700 inline-flex items-center justify-center"
+                    className="w-full font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 inline-flex items-center justify-center"
                   >
                     <svg
                       role="status"

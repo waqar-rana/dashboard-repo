@@ -163,22 +163,22 @@ const Login = () => {
     return (
         <>
             <Header />
-            <section className="text-gray-400 bg-violet-900 body-font">
+            <section className="text-gray-400 bg-gray-900 body-font">
                 <div className="container px-5 py-10 mx-auto flex flex-wrap items-center">
                     <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
                         <h1 className="title-font font-medium text-3xl text-white">Better Solution For Your Social Media Traffic</h1>
                         <p className="leading-relaxed mt-4">Social Media Traffic
                             A technology-first publisher specializing in entertainment, looking to partner with affiliates to drive traffic to our websites</p>
                     </div>
-                    <form onSubmit={handleSubmit(onSubmit)} className="lg:w-2/6 md:w-1/2 bg-violet-800 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                    <form onSubmit={handleSubmit(onSubmit)} className="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
                         <h2 className="text-white text-lg font-medium title-font mb-5">Sign In</h2>
                         <div className="relative mb-4">
                             <label htmlFor="username" className="leading-7 text-sm text-gray-400">Username</label>
-                            <input onFocus={() => { clearErrors("formErrors") }} type="text" {...register("username", { required: true })} className="w-full bg-violet-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <input onFocus={() => { clearErrors("formErrors") }} type="text" {...register("username", { required: true })} className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                         </div>
                         <div className="relative">
                             <label htmlFor="password" className="leading-7 text-sm text-gray-400">Password</label>
-                            <input onFocus={() => { clearErrors("formErrors") }} type={showPass ? "text" : "password"} {...register("password", { required: true })} className="w-full bg-violet-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 pl-3 pr-10 leading-8 transition-colors duration-200 ease-in-out" />
+                            <input onFocus={() => { clearErrors("formErrors") }} type={showPass ? "text" : "password"} {...register("password", { required: true })} className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 pl-3 pr-10 leading-8 transition-colors duration-200 ease-in-out" />
                             <span onClick={(e) => { e.preventDefault(); setShowPass(!showPass) }} className='absolute top-1/2 right-2 cursor-pointer'>
                                 {!showPass &&
                                     <lord-icon
@@ -210,7 +210,7 @@ const Login = () => {
                         }
                         {isSubmitting &&
 
-                            <button disabled type="button" className="py-2 px-5 text-lg font-medium rounded border focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-violet-800 text-gray-400 border-gray-600 hover:text-white hover:bg-violet-700 inline-flex items-center justify-center">
+                            <button disabled type="button" className="py-2 px-5 text-lg font-medium rounded border focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 inline-flex items-center justify-center">
 
                                 <svg aria-hidden="true" role="status" className="inline w-4 h-4 me-3 animate-spin text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
@@ -220,7 +220,7 @@ const Login = () => {
                             </button>
                         }
                         <p className="text-xs mt-3">We are no longer offering <b>Self Registration</b>. If you would like an account, please email us at:
-                            <a className='font-bold mx-1' href="mailto:socialseo090@gmail.com" target='blank'>socialseo090@gmail.com</a>
+                            <a className='font-bold mx-1' href="mailto:ranasahbg7777@gmail.com" target='blank'>ranasahbg7777@gmail.com</a>
                         </p>
                     </form>
                 </div>
@@ -228,12 +228,12 @@ const Login = () => {
 
             <div className={`bg-[#37415180] ${hideReset ? "hidden" : "flex"} overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-screen max-h-full`}>
                 <div className="relative p-4 w-full max-w-md max-h-full">
-                    <div className="relative rounded-lg shadow bg-violet-700">
+                    <div className="relative rounded-lg shadow bg-gray-700">
                         <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-600">
                             <h3 className="text-xl font-semibold text-white">
                                 Reset Password
                             </h3>
-                            <button onClick={() => { sethideReset(true) }} type="button" className="end-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:bg-violet-600 hover:text-white">
+                            <button onClick={() => { sethideReset(true) }} type="button" className="end-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white">
                                 <svg className="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                 </svg>
@@ -245,7 +245,7 @@ const Login = () => {
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">Email Address</label>
                                     <div className='relative'>
-                                        <input type="email" onFocus={() => { clearErrors2("formErrors") }} {...register2("email", { required: true })} className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-24 bg-violet-600 border-gray-500 placeholder-gray-400 text-white" placeholder="Enter Email Address" />
+                                        <input type="email" onFocus={() => { clearErrors2("formErrors") }} {...register2("email", { required: true })} className="border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pr-24 bg-gray-600 border-gray-500 placeholder-gray-400 text-white" placeholder="Enter Email Address" />
 
                                         {!isSubmitting2 &&
                                             <button className='cursor-pointer font-bold text-sm text-gray-200 hover:text-gray-400 px-3 border-l absolute top-1/4 right-0'>Get Code</button>
@@ -266,7 +266,7 @@ const Login = () => {
                             <form onSubmit={handleSubmit3(resetPass)} className={`space-y-4 ${otp ? "block" : "hidden"}`}>
                                 <div>
                                     <label htmlFor="otp" className="block mb-2 text-sm font-medium text-white">One Time Password (OTP)</label>
-                                    <input type="text" onFocus={() => { clearErrors3("formErrors") }} {...register3("otp", { required: true })} className="border text-center text-2xl font-extrabold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-14 p-4 bg-violet-600 border-gray-500 placeholder-gray-400 text-white tracking-widest" placeholder="Enter OTP" pattern="\d*" maxLength={6} title="6-Digit Code" />
+                                    <input type="text" onFocus={() => { clearErrors3("formErrors") }} {...register3("otp", { required: true })} className="border text-center text-2xl font-extrabold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-14 p-4 bg-gray-600 border-gray-500 placeholder-gray-400 text-white tracking-widest" placeholder="Enter OTP" pattern="\d*" maxLength={6} title="6-Digit Code" />
                                     <div className="text-sm text-right text-slate-300 mt-1">Did not receive code?
                                         {!sendingOtp && timeLeft <= 0 &&
                                             <span onClick={() => { Resend() }} className="cursor-pointer font-medium text-blue-400 hover:text-blue-500 mx-1">Resend</span>
@@ -291,7 +291,7 @@ const Login = () => {
                                 }
                                 {isSubmitting3 &&
 
-                                    <button disabled type="button" className="w-full font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-violet-800 text-gray-400 border-gray-600 hover:text-white hover:bg-violet-700 inline-flex items-center justify-center">
+                                    <button disabled type="button" className="w-full font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 inline-flex items-center justify-center">
 
                                         <svg role="status" className="inline w-4 h-4 me-3 animate-spin text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />

@@ -274,7 +274,7 @@ const Admimpanel = () => {
           Daily Earn Admin’s Panel
         </h1>
         <div className="w-[80vw] mx-auto mt-4 relative shadow-md sm:rounded-lg">
-          <div className="bg-violet-900 flex justify-between items-center flex-wrap gap-2 p-1">
+          <div className="bg-gray-900 flex justify-between items-center flex-wrap gap-2 p-1">
             <div className="relative mx-1 w-full sm:w-1/2">
               <div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
