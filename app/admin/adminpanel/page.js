@@ -27,7 +27,7 @@ const Admimpanel = () => {
   const [showEarnings, setShowEarnings] = useState(true);
 
   useEffect(() => {
-    document.title = "Admin Panel | Daily Earn Online";
+    document.title = "Admin Panel | EarnBee Online";
     getUsers();
   }, []);
 
@@ -271,7 +271,7 @@ const Admimpanel = () => {
       <AdminHeader />
       <main className="relative">
         <h1 className="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">
-          Daily Earn Admin’s Panel
+          EarnBee Admin’s Panel
         </h1>
         <div className="w-[80vw] mx-auto mt-4 relative shadow-md sm:rounded-lg">
           <div className="bg-gray-900 flex justify-between items-center flex-wrap gap-2 p-1">

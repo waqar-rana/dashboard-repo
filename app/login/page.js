@@ -16,7 +16,7 @@ const Login = () => {
     const [timeLeft, setTimeLeft] = useState(60); // 60 seconds
     
     useEffect(() => {
-        document.title = "Login | Daily Earn Online"
+        document.title = "Login | EarnBee Online"
     }, [])
 
     useEffect(() => {

@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Header from "./components/header";
-import FTTlogo from "../app/images/logo.png"
-import WivesHubLogo from "../app/images/wiveshub.png"
-import DJlogo from "../app/images/dailyjugarr.png"
-import moazzam from "../app/images/moazzam.png"
-import naveed from "../app/images/naveed.png"
-import nabeel from "../app/images/nabeel.png"
-import aftab from "../app/images/aftab.jpg"
+import Hervha from "../app/images/Hervha.png"
 import comingSoon from "../app/images/coming-soon.png"
 import Link from "next/link";
 import Footer from "./components/footer";
@@ -84,15 +78,15 @@ export default function Home() {
               <div className="relative flex flex-col min-w-0 break-words bg-gray-800 w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
                   {/* <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"> */}
-                  <Link href={"https://fashiontipstricks.com"} target="blank">
-                    <Image className="p-3 inline-flex items-center justify-center mb-5" src={FTTlogo} width={200} alt="Fasion Tips Tricks Logo" />
+                  <Link href={"https://hervha.com"} target="blank">
+                    <Image className="p-3 inline-flex items-center justify-center mb-5" src={Hervha} width={200} alt="FaHervha Tips Tricks Logo" />
                   </Link>
                   {/* </div> */}
                   <h6 className="text-white text-xl font-semibold hover:underline">
-                    <Link href={"https://fashiontipstricks.com"} target="blank">Fashion Tips & Tricks</Link>
+                    <Link href={"https://hervha.com"} target="blank">Hervha</Link>
                   </h6>
                   <p className="mt-2 mb-4 text-gray-300">
-                    Fashiontipstricks is a website that shares easy fashion tips and tricks to help you look your best. It covers everything from basic wardrobe advice to the latest trends. Ideal for anyone wanting to improve their style with simple, practical advice.
+                  Hervha.com is your go-to place for stylish and trendy fashion. We celebrate individuality and offer a wide range of clothing for every occasion and style. Explore, express, and embrace your unique fashion with us!
                   </p>
                 </div>
               </div>
@@ -220,7 +214,7 @@ export default function Home() {
                   A growing company
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-300">
-                  We generate the industrys highest conversion rates and drive over 1.5B readers yearly. <strong>Daily Earn Online</strong> affiliate team is looking for partners that want to launch a new and scalable revenue stream.
+                  We generate the industrys highest conversion rates and drive over 1.5B readers yearly. <strong>EarnBee Online</strong> affiliate team is looking for partners that want to launch a new and scalable revenue stream.
                 </p>
                 <ul className="list-none mt-6">
                   <li className="py-2">

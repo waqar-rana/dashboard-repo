@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next-nprogress-bar";
 import { useState, useEffect } from "react";
-import logo from "../images/DailyEarn.png";
+import logo from "../images/Earnbee.png";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
@@ -60,7 +60,7 @@ const Header = () => {
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                     </svg>
                     <span className="ml-3 text-xl">FTT Dashboard</span> */}
-          <Image src={logo} alt="Logo" className="h-5 sm:h-10 w-auto" />
+          <Image src={logo} alt="Logo" className="h-10 sm:h-14 w-auto" />
         </Link>
 
         {(currentPath == "/login" || currentPath == "/") && (

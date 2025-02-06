@@ -21,7 +21,7 @@ export default function UTMLinks() {
   }, [params?.username]);
 
   useEffect(() => {
-    document.title = "UTM Links | Daily Earn Online"
+    document.title = "UTM Links | EarnBee Online"
     fetchCategories();
   }, []);
 

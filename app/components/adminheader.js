@@ -6,7 +6,7 @@ import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import logo from "../images/DailyEarnBlack.png";
+import logo from "../images/Earnbee-Logo.jpg";
 
 const AdminHeader = () => {
   const router = useRouter();

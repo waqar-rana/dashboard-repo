@@ -13,7 +13,7 @@ export default function UtmGenerator() {
     const [copiedIndexes, setCopiedIndexes] = useState([]);
 
     useEffect(() => {
-        document.title = "UTM Generator | Daily Earn Online"
+        document.title = "UTM Generator | EarnBee Online"
     }, [])
 
     useEffect(() => {

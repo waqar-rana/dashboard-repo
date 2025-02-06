@@ -40,7 +40,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    document.title = "Dashboard | Daily Earn Online";
+    document.title = "Dashboard | EarnBee Online";
     // Get the username from cookies after the component has mounted
     const storedUsername = Cookies.get("username");
     if (storedUsername) {

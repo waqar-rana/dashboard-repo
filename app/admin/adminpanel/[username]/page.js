@@ -34,7 +34,7 @@ const UserStats = ({ params }) => {
   };
 
   useEffect(() => {
-    document.title = `${params.username} Stats | Daily Earn Online`;
+    document.title = `${params.username} Stats | EarnBee Online`;
     setUsername(params.username);
     const today = new Date();
     const thirtyDaysAgo = new Date();
